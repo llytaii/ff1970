@@ -23,4 +23,5 @@ func _process(delta):
 	elif Input.is_action_pressed("go_right"):
 		self.translate(Vector2.RIGHT * speed * delta)
 		anim.play("go_right")
-	pass
+	else:
+		anim.stop()
